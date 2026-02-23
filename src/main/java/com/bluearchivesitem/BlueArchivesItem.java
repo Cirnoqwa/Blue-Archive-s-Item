@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 public class BlueArchivesItem implements ModInitializer {
 	public static final String MOD_ID = "blue_archives_item";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static final RegistryKey<PlacedFeature> CUSTOM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("tutorial","ore_custom"));//注册一个PlacedFeature的RegistryKey，命名空间为tutorial，路径为ore_custom。后续在生成类中使用这个RegistryKey来添加自定义矿石生成。
+	public static final RegistryKey<PlacedFeature> CUSTOM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("blue_archives_item","ore_custom"));//注册一个PlacedFeature的RegistryKey，命名空间为tutorial，路径为ore_custom。后续在生成类中使用这个RegistryKey来添加自定义矿石生成。
 
 
 	@Override
@@ -26,6 +26,7 @@ public class BlueArchivesItem implements ModInitializer {
 		com.bluearchivesitem.block.ModBlocks.registerBlocks(); // 注册方块
 		ModItemGroups.registerItemGroups(); // 注册物品栏
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CUSTOM_ORE_PLACED_KEY);// 在主世界生成青辉石矿石
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CUSTOM_ORE_PLACED_KEY);//在末地生成
 		LOGGER.info("Blue Archive's Item Mod loaded!");
 	}
 }

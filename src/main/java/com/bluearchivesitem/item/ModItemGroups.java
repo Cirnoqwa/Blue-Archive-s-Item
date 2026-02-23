@@ -18,7 +18,7 @@ public class ModItemGroups {
             new Identifier(BlueArchivesItem.MOD_ID, "blue_archive_group"),
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModItems.QHS)) // 物品栏图标
-                    .displayName(Text.translatable("itemgroup.blue_archive_group")) // 物品栏名字
+                    .displayName(Text.translatable("itemgroup.blue_archives_group")) // 物品栏名字
                     .entries((displayContext, entries) -> {
                         // 添加物品
                         entries.add(ModItems.QHS);
