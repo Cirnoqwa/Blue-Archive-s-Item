@@ -21,7 +21,7 @@ public class ModItems {
         // Register the item using that namespace so Minecraft can find the
         // model/texture files located under assets/blue-archives-item/...
         return Registry.register(Registries.ITEM,
-                new Identifier("blue-archives-item", name),
+                new Identifier("blue_archives_item", name),
                 item);
     }
 }

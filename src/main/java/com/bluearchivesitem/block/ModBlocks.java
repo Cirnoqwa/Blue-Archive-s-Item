@@ -58,9 +58,9 @@ public class ModBlocks {
     }
 
     private static Block registerBlock(String name, Block block, Item.Settings settings) {
-        Block registered = Registry.register(Registries.BLOCK, new Identifier("blue-archives-item", name), block);
+        Block registered = Registry.register(Registries.BLOCK, new Identifier("blue_archives_item", name), block);
         // Register the BlockItem using the provided settings
-        Registry.register(Registries.ITEM, new Identifier("blue-archives-item", name), new BlockItem(block, settings));
+        Registry.register(Registries.ITEM, new Identifier("blue_archives_item", name), new BlockItem(block, settings));
         return registered;
     }
 }

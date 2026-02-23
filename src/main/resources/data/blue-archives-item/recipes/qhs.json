@@ -9,5 +9,5 @@
     "D": { "item": "minecraft:diamond" },
     "A": { "item": "minecraft:amethyst_shard" }
   },
-  "result": { "item": "blue-archives-item:qhs", "count": 1 }
+  "result": { "item": "blue_archives_item:qhs", "count": 1 }
 }

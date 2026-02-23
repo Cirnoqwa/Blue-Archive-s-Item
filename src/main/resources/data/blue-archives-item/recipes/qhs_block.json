@@ -6,7 +6,7 @@
     "QQQ"
   ],
   "key": {
-    "Q": { "item": "blue-archives-item:qhs" }
+    "Q": { "item": "blue_archives_item:qhs" }
   },
-  "result": { "item": "blue-archives-item:qhs_block", "count": 1 }
+  "result": { "item": "blue_archives_item:qhs_block", "count": 1 }
 }
